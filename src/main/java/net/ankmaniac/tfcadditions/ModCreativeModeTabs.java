@@ -26,8 +26,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CINDERBLOCKS.get());
                         pOutput.accept(ModBlocks.CONCRETE_SLABS.get());
                         pOutput.accept(ModBlocks.CONCRETE.get());
-                        //pOutput.accept(ModBlocks.MARBLE_COLUMN.get());
-                        pOutput.accept(ModBlocks.TABLE.get());
                     })
                     .build());
 

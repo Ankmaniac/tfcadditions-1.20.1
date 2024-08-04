@@ -5,6 +5,7 @@ import net.ankmaniac.tfcadditions.fluid.ModFluids;
 import net.ankmaniac.tfcadditions.item.ModItems;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.rock.Rock;
+import net.dries007.tfc.common.blocks.wood.Wood;
 import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.registry.RegistrationHelpers;
 import net.minecraft.world.item.BlockItem;
@@ -34,8 +35,6 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
     public static final RegistryObject<Block> CONCRETE = registerBlock("concrete/concrete",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
-//  public static final RegistryObject<Block> MARBLE_COLUMN = registerBlock("rock/column/marble",
-//            () -> new Block(BlockBehaviour.Properties.of()));
     public static final Map<Rock, RegistryObject<Block>> ROCKS_COLUMNS = Helpers.mapOfKeys(Rock.class, rock ->(
                 register(("rock/column/"+ rock.name()), () -> new
                         ColumnBlock(BlockBehaviour.Properties.of()
@@ -43,8 +42,10 @@ public class ModBlocks {
                         .instrument(NoteBlockInstrument.BASEDRUM)
                         .strength(6.5f,10)
                         .noOcclusion()))));
-    public static final RegistryObject<Block> TABLE = registerBlock("wood/table/table",
-            () -> new Block(BlockBehaviour.Properties.of().noOcclusion()));
+    public static final Map<Wood, RegistryObject<Block>> TABLES = Helpers.mapOfKeys(Wood.class, wood ->
+            register(("wood/table/"+ wood.name()), () -> new
+                    TableBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion())));
 
     public static final RegistryObject<Block> FLUID_CONCRETE_BLOCK = BLOCKS.register("fluid/fluid_concrete_block",
             () -> new LiquidBlock(ModFluids.SOURCE_FLUID_CONCRETE, BlockBehaviour.Properties.copy(Blocks.WATER)));

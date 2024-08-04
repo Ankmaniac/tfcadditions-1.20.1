@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 public class TfcAdditionsTags {
     public static class Blocks{
         public static final TagKey<Block> Rock_Columns = create("rock_columns");
+        public static final TagKey<Block> TABLES = create("tables");
 
         private static TagKey<Block> create(String id)
         {
