@@ -3,11 +3,12 @@ package net.ankmaniac.tfcadditions.block;
 import net.ankmaniac.tfcadditions.TfcAdditions;
 import net.ankmaniac.tfcadditions.fluid.ModFluids;
 import net.ankmaniac.tfcadditions.item.ModItems;
-import net.dries007.tfc.common.blocks.ExtendedProperties;
+
 import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.blocks.wood.Wood;
 import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.registry.RegistrationHelpers;
+
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -19,6 +20,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
@@ -46,6 +48,9 @@ public class ModBlocks {
             register(("wood/table/"+ wood.name()), () -> new
                     TableBlock(BlockBehaviour.Properties.of()
                     .noOcclusion())));
+    public static final RegistryObject<Block> CRAFTING_CLOTH = registerBlock("crafting_cloth",
+            () -> new CraftingCloth(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
 
     public static final RegistryObject<Block> FLUID_CONCRETE_BLOCK = BLOCKS.register("fluid/fluid_concrete_block",
             () -> new LiquidBlock(ModFluids.SOURCE_FLUID_CONCRETE, BlockBehaviour.Properties.copy(Blocks.WATER)));
