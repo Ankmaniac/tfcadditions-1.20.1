@@ -1,0 +1,16 @@
+{
+  "item.tfcadditions.wood.mold.slab.slab_mold": "Wood Slab Mold",
+  "item.tfcadditions.wood.mold.brick.brick_mold": "Wood Brick Mold",
+  "item.tfcadditions.concrete.slab.concrete_slab": "Concrete Slab",
+  "item.tfcadditions.concrete.brick.cinder_block": "Cinder Block",
+
+  "block.tfcadditions.concrete.bricks.cinderblocks": "Cinder Blocks",
+  "block.tfcadditions.concrete.slabs.concrete_slabs": "Concrete Slabs",
+  "block.tfcadditions.concrete.concrete": "Concrete",
+  "block.tfcadditions.rock.column.marble": "Marble Column",
+  "block.tfcadditions.wood.table.table": "Table",
+
+  "creativetab.tfcadditions_tab": "TFC Additions",
+
+  "tooltip.tfcadditions.swap_styles": "Swap styles by right-clicking with a hammer"
+}

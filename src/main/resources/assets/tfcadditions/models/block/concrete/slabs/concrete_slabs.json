@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tfcadditions:block/concrete/slabs/light_gray"
+  }
+}

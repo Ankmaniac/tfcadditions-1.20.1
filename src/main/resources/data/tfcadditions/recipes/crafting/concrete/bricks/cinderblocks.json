@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "121",
+    "212",
+    "121"
+  ],
+  "key": {
+    "1": {
+      "item": "tfcadditions:concrete/brick/cinder_block"
+    },
+    "2": {
+      "tag": "tfc:mortar"
+    }
+  },
+  "result": {
+    "item": "tfcadditions:concrete/bricks/cinderblocks",
+    "count": 4
+  }
+}

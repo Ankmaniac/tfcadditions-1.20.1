@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tfcadditions:block/concrete/bricks/cinderblocks"
+    }
+  }
+}

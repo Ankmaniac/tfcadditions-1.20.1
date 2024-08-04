@@ -1,0 +1,74 @@
+{
+  "variants": {
+    "north=false,east=false,south=false,west=false": {
+      "model": "tfcadditions:block/wood/table/table",
+      "uvlock": true
+    },
+    "north=true,east=false,south=false,west=false": {
+      "model": "tfcadditions:block/wood/table/table_end",
+      "y": 180,
+      "uvlock": true
+    },
+    "north=false,east=true,south=false,west=false": {
+      "model": "tfcadditions:block/wood/table/table_end",
+      "y": 270,
+      "uvlock": true
+    },
+    "north=false,east=false,south=true,west=false": {
+      "model": "tfcadditions:block/wood/table/table_end",
+      "uvlock": true
+    },
+    "north=false,east=false,south=false,west=true": {
+      "model": "tfcadditions:block/wood/table/table_end",
+      "y": 90,
+      "uvlock": true
+    },
+    "north=true,east=true,south=true,west=true": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    },
+    "north=false,east=true,south=false,west=true": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    },
+    "north=true,east=false,south=true,west=false": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    },
+    "north=true,east=true,south=false,west=false": {
+      "model": "tfcadditions:block/wood/table/table_corner",
+      "y": 270,
+      "uvlock": true
+    },
+    "north=false,east=true,south=true,west=false": {
+      "model": "tfcadditions:block/wood/table/table_corner",
+      "uvlock": true
+    },
+    "north=false,east=false,south=true,west=true": {
+      "model": "tfcadditions:block/wood/table/table_corner",
+      "y": 90,
+      "uvlock": true
+    },
+    "north=true,east=false,south=false,west=true": {
+      "model": "tfcadditions:block/wood/table/table_corner",
+      "y": 180,
+      "uvlock": true
+    },
+    "north=true,east=true,south=true,west=false": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    },
+    "north=false,east=true,south=true,west=true": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    },
+    "north=true,east=false,south=true,west=true": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    },
+    "north=true,east=true,south=false,west=true": {
+      "model": "tfcadditions:block/wood/table/table_middle",
+      "uvlock": true
+    }
+  }
+}
