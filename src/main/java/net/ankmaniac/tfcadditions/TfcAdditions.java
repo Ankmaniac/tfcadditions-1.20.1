@@ -5,6 +5,8 @@ import net.ankmaniac.tfcadditions.block.ModBlocks;
 import net.ankmaniac.tfcadditions.fluid.ModFluidTypes;
 import net.ankmaniac.tfcadditions.fluid.ModFluids;
 import net.ankmaniac.tfcadditions.item.ModItems;
+import net.ankmaniac.tfcadditions.sound.ModSounds;
+import net.ankmaniac.tfcadditions.util.InsulationReplacementHandler;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,6 +33,8 @@ public class TfcAdditions
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        MinecraftForge.EVENT_BUS.register(InsulationReplacementHandler.class);
+
         bus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,6 +44,7 @@ public class TfcAdditions
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

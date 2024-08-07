@@ -3,6 +3,11 @@
   "item.tfcadditions.wood.mold.brick.brick_mold": "Wood Brick Mold",
   "item.tfcadditions.concrete.slab.concrete_slab": "Concrete Slab",
   "item.tfcadditions.concrete.brick.cinder_block": "Cinder Block",
+  "item.tfcadditions.asbestos_lining": "Asbestos Lining",
+  "item.tfcadditions.asbestos_cloth": "Asbestos Cloth",
+  "item.tfcadditions.asbestos_string": "Asbestos Fiber",
+  "item.tfcadditions.asbeestos": "Asbeestos",
+  "item.tfcadditions.ore.asbestos": "Asbestos Ore",
 
   "block.tfcadditions.concrete.bricks.cinderblocks": "Cinder Blocks",
   "block.tfcadditions.concrete.slabs.concrete_slabs": "Concrete Slabs",
@@ -10,6 +15,7 @@
   "block.tfcadditions.rock.column.marble": "Marble Column",
   "block.tfcadditions.wood.table.table": "Table",
   "block.tfcadditions.crafting_cloth": "Crafting Cloth",
+  "block.tfcadditions.asbestos": "Asbestos Block",
 
   "creativetab.tfcadditions_tab": "TFC Additions",
 

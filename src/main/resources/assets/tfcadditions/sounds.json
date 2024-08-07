@@ -1,0 +1,62 @@
+{
+  "asbestos/asbestos_break": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_break",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_break"
+    ]
+  },
+  "asbestos/asbestos_step": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_step",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_step"
+    ]
+  },
+  "asbestos/asbestos_place": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_place",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_place"
+    ]
+  },
+  "asbestos/asbestos_hit": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_hit",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_hit"
+    ]
+  },
+  "asbestos/asbestos_fall": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_fall",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_fall"
+    ]
+  },
+  "asbestos/asbestos_planks_break": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_planks_break",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_planks_break"
+    ]
+  },
+  "asbestos/asbestos_planks_step": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_planks_step",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_planks_step"
+    ]
+  },
+  "asbestos/asbestos_planks_place": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_planks_place",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_planks_place"
+    ]
+  },
+  "asbestos/asbestos_planks_hit": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_planks_hit",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_planks_hit"
+    ]
+  },
+  "asbestos/asbestos_planks_fall": {
+    "subtitles": "sounds.tfcadditions.asbestos/asbestos_planks_fall",
+    "sounds": [
+      "tfcadditions:asbestos/asbestos_planks_fall"
+    ]
+  }
+}

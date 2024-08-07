@@ -22,6 +22,16 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CINDER_BLOCK = ITEMS.register("concrete/brick/cinder_block",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASBESTOS_LINING = ITEMS.register("asbestos_lining",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASBESTOS_CLOTH = ITEMS.register("asbestos_cloth",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASBESTOS_STRING = ITEMS.register("asbestos_string",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASBEESTOS = ITEMS.register("asbeestos",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASBESTOS_ORE = ITEMS.register("ore/asbestos",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CONCRETE_BUCKET = ITEMS.register("concrete/bucket",
             () -> new BucketItem(ModFluids.SOURCE_FLUID_CONCRETE, new Item.Properties().craftRemainder(Items.BUCKET)));

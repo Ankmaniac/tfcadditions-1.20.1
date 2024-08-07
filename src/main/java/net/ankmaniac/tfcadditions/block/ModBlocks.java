@@ -11,9 +11,7 @@ import net.dries007.tfc.util.registry.RegistrationHelpers;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -37,6 +35,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
     public static final RegistryObject<Block> CONCRETE = registerBlock("concrete/concrete",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final RegistryObject<Block> ASBESTOS = registerBlock("asbestos",
+        () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.WOOL)));
     public static final Map<Rock, RegistryObject<Block>> ROCKS_COLUMNS = Helpers.mapOfKeys(Rock.class, rock ->(
                 register(("rock/column/"+ rock.name()), () -> new
                         ColumnBlock(BlockBehaviour.Properties.of()
@@ -51,6 +51,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRAFTING_CLOTH = registerBlock("crafting_cloth",
             () -> new CraftingCloth(BlockBehaviour.Properties.of()
                     .noOcclusion()));
+    public static final Map<Wood, RegistryObject<Block>> INSULATED_PLANKS = Helpers.mapOfKeys(Wood.class, wood ->
+            register(("wood/planks/insulated_"+ wood.name()), () -> new
+                    Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(wood.woodColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(1.5f, 3F))));
+    public static final Map<Wood, RegistryObject<Block>> INSULATED_PLANKS_SLABS = Helpers.mapOfKeys(Wood.class, wood ->
+            register(("wood/planks/insulated_"+ wood.name() + "_slab"), () -> new
+                    SlabBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(wood.woodColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(1.5f, 3F))));
+    public static final Map<Wood, RegistryObject<Block>> INSULATED_PLANKS_STAIRS = Helpers.mapOfKeys(Wood.class, wood ->
+            register(("wood/planks/insulated_"+ wood.name() + "_stairs"), () -> new
+                    StairBlock(() -> Blocks.OAK_WOOD.defaultBlockState(), BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+                    .mapColor(wood.woodColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(1.5f, 3F))));
 
     public static final RegistryObject<Block> FLUID_CONCRETE_BLOCK = BLOCKS.register("fluid/fluid_concrete_block",
             () -> new LiquidBlock(ModFluids.SOURCE_FLUID_CONCRETE, BlockBehaviour.Properties.copy(Blocks.WATER)));
